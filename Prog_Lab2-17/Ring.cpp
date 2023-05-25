@@ -181,7 +181,8 @@ void DeleteK_Element(ring* const r, int k)
 	
 	while (!IsRingEmpty(&newRing))
 	{
-		for (int i = 1; i < k; i++)
+		for (int i = 1; i <
+			k; i++)
 			GoNextRing(&newRing);
 		printf_s("%d - ", PopRing(&newRing));
 	}
