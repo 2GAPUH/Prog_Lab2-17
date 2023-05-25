@@ -84,7 +84,7 @@ void MainLoop()
 					break;
 				printf_s("Invalid value!");
 			}
-			DeleteK_Element(&array, 1);
+			DeleteK_Element(&array, tmpValue);
 			break;
 
 		case 0:

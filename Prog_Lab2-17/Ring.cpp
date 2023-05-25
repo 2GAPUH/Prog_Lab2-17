@@ -178,12 +178,14 @@ void DeleteK_Element(ring* const r, int k)
 
 	printf_s("Elements are removed in the following order: ");
 
+	
 	while (!IsRingEmpty(&newRing))
 	{
-		for (int i = 0; i <= k; i++)
+		for (int i = 1; i < k; i++)
 			GoNextRing(&newRing);
 		printf_s("%d - ", PopRing(&newRing));
 	}
+
 	printf_s("\b\b  \n");
 
 	PrintRing(&newRing);
